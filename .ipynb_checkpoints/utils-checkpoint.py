@@ -5,13 +5,13 @@ import matplotlib.pyplot as plt
 def build_linear_nn_model():
     tf.random.set_seed(20)
     model1 = Sequential(
-        [Dense(25, activation='relu'),
+        [Dense(30, activation='relu'),
          Dense(15, activation='relu'),
          Dense(1, activation='linear') ],name='model1'
     )
 
     model2 = Sequential(
-        [Dense(25, activation='relu'),
+        [Dense(30, activation='relu'),
          Dense(15, activation='relu'),
          Dense(10, activation='relu'),
          Dense(8, activation='relu'),
